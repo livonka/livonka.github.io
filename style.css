@@ -29,11 +29,11 @@ ul {
 	width: 500px;
 	display: inline-block;
 	vertical-align:top;
-	background: url('img/bg5.png') no-repeat top;
+	background: url('img/bg2.png') no-repeat top;
 }
 #main_img {
 	display: inline-block;
-	background: url('img/bg3.png') no-repeat left 25% center fixed;
+	background: url('img/bg1.png') no-repeat left 25% center fixed;
 	width: 400px;
 	height: 2000px;
 	vertical-align:top;
