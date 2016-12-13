@@ -6,8 +6,11 @@ body {
 }
 #content {
 	width: 800px;
-	text-align: justify;
+	text-align: center;
 	margin: 0 auto;
+}
+#content p {
+	text-align: justify;
 }
 #content h1 {
 	text-align: center;
