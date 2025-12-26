@@ -1,88 +1,119 @@
+:root {
+  --bg-main: #F6F4F1;
+  --text-main: #1E2430;
+  --accent: #E07A2F;
+}
+
 body {
 	width: 100%;
-	font-family: 'Poiret One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
 	margin: 0;
 	padding: 0;
+	background-color: var(--bg-main);
+	color: var(--text-main);
 }
 #content {
 	max-width: 800px;
-	width: 100%;
 	padding: 0 16px;
-	text-align: center;
-	margin: 0 auto;
+	margin: 50px auto;      /* ↑↓ 50px, ←→ auto (центрирование) */
 	box-sizing: border-box;
 }
-#content p {
-	text-align: justify;
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5em;
+  font-weight: 400;     /* у этого шрифта один вес */
+  line-height: 0.9;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  max-width: 600px;
+  margin: 0px auto;
 }
-
-#content_main {
-	max-width: 1000px;
-	width: 100%;
-	padding: 0 16px;
-	text-align: justify;
-	margin: 0 auto;
-	box-sizing: border-box;
+hr {
+  border: none;
+  border-top: 1px solid #E2E0DC;
+  margin: 2rem 0;
 }
 li {
     list-style-type: none; 
-   }
+}
 ul {
-    margin-left: 0; 
-    padding-left: 0;
-   }
+  margin: 0;
+  padding: 0;
+}
 
-#main_right {
-	width: 500px;
-	display: inline-block;
-	vertical-align:top;
-	background: url('img/bg2.png') no-repeat top;
-}
-#main_img {
-	display: inline-block;
-	background: url('img/bg1.png') no-repeat left 25% center fixed;
-	width: 400px;
-	height: 4000px;
-	vertical-align:top;
-}
 #recepies {
-	margin-top: 50px;
+	max-width: 600px;
+	margin: 0px auto;
 }
 h3 {
 	font-size: 1.3em;
-	margin:0 0 0 30px;
+	margin:0 0 0 0px;
 	padding: 0;
+	font-weight: 400;
+	
 }
 h2 {
-	color: #74bb42;
+	font-size: 2.2em;
+	font-weight: 500;
+	color: var(--accent);
+	margin-top: 40px;
+	margin-bottom: 10px;
+	letter-spacing: -0.04em;
 }
 a {
 	text-decoration: none;
-	color:#182d3e;
 	margin: 0;
 	padding: 0;
-}
-a:hover {
-	color: #ff3633;
+	color: var(--text-main);
 }
 
+a:hover {
+	color: var(--accent);
+}
+
+b {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;            /* отступ между фото и ингредиентами */
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.recipe-photo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;    /* чтобы красиво кадрировалось */
+  border-radius: 3px;
+}
+#back-link {
+  display: inline-flex;
+  align-items: center;   /* вертикальное выравнивание */
+  gap: 8px;              /* расстояние между стрелкой и текстом */
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
 .item_list li{
 	list-style-type: circle;
 	text-align: left;
-	margin-left: 50px;
 }
+@media (max-width: 860px) {
+  .top {
+    flex-direction: column;
+  }
 
-@media (max-width: 768px) {
-
-  #main_img,
-  #main_right {
+  .recipe-photo {
     width: 100%;
-    display: block;
-    background: none;
+    max-width: 400px;
+    height: auto;       /* на мобиле пусть будет естественная высота */
   }
-
-  #main_img {
-    height: auto;
-  }
-
 }
