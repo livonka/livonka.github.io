@@ -2,6 +2,7 @@
   --bg-main: #F6F4F1;
   --text-main: #1E2430;
   --accent: #E07A2F;
+  --text-main-rgb: 30, 36, 48;
 }
 
 body {
@@ -14,30 +15,61 @@ body {
 	background-color: var(--bg-main);
 	color: var(--text-main);
 }
+
 #content {
 	max-width: 800px;
 	padding: 0 16px;
 	margin: 50px auto;      /* ↑↓ 50px, ←→ auto (центрирование) */
 	box-sizing: border-box;
 }
+
 h1 {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 5em;
-  font-weight: 400;     /* у этого шрифта один вес */
+  font-weight: 400;
   line-height: 0.9;
-  letter-spacing: 0.5px;
-  color: var(--accent);
+  color: rgba(var(--text-main-rgb), 0.8);
   max-width: 600px;
   margin: 0px auto;
 }
+
+h1 .accent {
+  color: var(--accent);
+}
+
+h2 {
+	font-size: 2.2em;
+	line-height: 1;
+	font-weight: 500;
+	color: var(--accent);
+	margin-top: 40px;
+	margin-bottom: 10px;
+	letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 10px 0px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+h4 {
+	font-size: 1.3em;
+	margin:0 0 0 0px;
+	padding: 0;
+	font-weight: 400;
+}
+
 hr {
   border: none;
   border-top: 1px solid #E2E0DC;
   margin: 2rem 0;
 }
+
 li {
     list-style-type: none; 
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -45,23 +77,10 @@ ul {
 
 #recepies {
 	max-width: 600px;
+	padding-top: 40px;
 	margin: 0px auto;
 }
-h3 {
-	font-size: 1.3em;
-	margin:0 0 0 0px;
-	padding: 0;
-	font-weight: 400;
-	
-}
-h2 {
-	font-size: 2.2em;
-	font-weight: 500;
-	color: var(--accent);
-	margin-top: 40px;
-	margin-bottom: 10px;
-	letter-spacing: -0.04em;
-}
+
 a {
 	text-decoration: none;
 	margin: 0;
@@ -92,6 +111,11 @@ b {
   object-fit: cover;    /* чтобы красиво кадрировалось */
   border-radius: 3px;
 }
+
+#ingridients li {
+  font-style: italic;
+}
+
 #back-link {
   display: inline-flex;
   align-items: center;   /* вертикальное выравнивание */
@@ -102,6 +126,7 @@ b {
   margin-top: 30px;
   margin-bottom: 70px;
 }
+
 .item_list li{
 	list-style-type: circle;
 	text-align: left;
