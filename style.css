@@ -25,12 +25,13 @@ body {
 
 h1 {
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 5em;
+  font-size: clamp(2.8rem, 8vw, 5rem);
   font-weight: 400;
   line-height: 0.9;
   color: rgba(var(--text-main-rgb), 0.8);
   max-width: 600px;
   margin: 0px auto;
+  padding: 0 6px; /* немного воздуха на мобиле */
 }
 
 h1 .accent {
@@ -114,6 +115,9 @@ b {
 
 #ingridients li {
   font-style: italic;
+  line-height: 1.20;     /* расстояние МЕЖДУ строками одного пункта */
+  margin-bottom: 8px;   /* расстояние МЕЖДУ разными пунктами */
+  font-size: 0.9em;
 }
 
 #back-link {
@@ -140,5 +144,24 @@ b {
     width: 100%;
     max-width: 400px;
     height: auto;       /* на мобиле пусть будет естественная высота */
+  }
+}
+
+@media (max-width: 520px) {
+  #content {
+    margin: 24px auto;     /* меньше верх/низ */
+    padding: 0 18px;       /* поля по краям */
+  }
+
+  #recepies {
+    padding-top: 18px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #recepies h4 {
+    font-size: 1.05rem;
   }
 }
