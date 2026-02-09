@@ -131,6 +131,12 @@ b {
   margin-bottom: 70px;
 }
 
+#inside-recipe-link {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 .item_list li{
 	list-style-type: circle;
 	text-align: left;
