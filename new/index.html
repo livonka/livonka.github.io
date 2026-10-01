@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="foodie book, рецепты">
+    <meta name="description" content="Кулинарная книга Юлии">
+    <meta name="author" content="Julia Vard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарная книга</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">
+</head>
+<body class="recipe-page catalog-page">
+    <a class="skip-link" href="#main-dishes">Перейти к рецептам</a>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Разделы рецептов">
+            <div class="nav-group">
+                <a href="#main-dishes" data-header-link="main-dishes">основное</a>
+                <a href="#soups" data-header-link="soups">супы</a>
+                <a href="#desserts" data-header-link="desserts">десерты</a>
+            </div>
+
+            <div class="site-mark" aria-hidden="true">
+                <img src="../img/logo.svg" alt="">
+            </div>
+
+            <div class="nav-group nav-group-right">
+                <a href="#sauces" data-header-link="sauces">соусы</a>
+                <a href="#drinks" data-header-link="drinks">напитки</a>
+                <span class="language-switch" aria-label="Язык сайта">
+                    <strong>RU</strong><span aria-hidden="true"> / </span><span>EN</span>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="catalog" id="recipe-list">
+            <section class="catalog-section">
+                <div class="category-panel">
+                    <nav class="category-nav" aria-label="Категории рецептов">
+                            <a href="#main-dishes" class="is-active" aria-current="true">Основные блюда</a>
+                            <a href="#soups">Супы</a>
+                            <a href="#desserts">Десерты</a>
+                            <a href="#sauces">Соусы</a>
+                            <a href="#drinks">Напитки</a>
+                    </nav>
+                </div>
+                <div class="recipes-panel" id="main-dishes" data-section="main-dishes">
+                    <h2 class="visually-hidden">Основные блюда</h2>
+                    <div class="recipe-columns">
+                        <ul class="recipe-column">
+                            <li><a href="recipes/adovaya_vkusnyashka.html">Адовая вкусняшка</a></li>
+                            <li><a href="recipes/aranchini.html">Аранчини</a></li>
+                            <li><a href="recipes/baklajani.html">Баклажаны с тминным йогуртом</a></li>
+                            <li><a href="">- Баланьезе</a></li>
+                            <li><a href="recipes/batat_s_fetoy.html">Батат с фетой</a></li>
+                            <li><a href="recipes/belyashi.html">Беляши</a></li>
+                            <li><a href="recipes/blini.html">Блины молочные с начинкой</a></li>
+                            <li><a href="">- Бутерброды с сыром и луком на сковороде</a></li>
+                            <li><a href="">- Вареники</a></li>
+                            <li><a href="recipes/vinegret.html">Винегрет</a></li>
+                            <li><a href="">- Гёдза</a></li>
+                            <li><a href="recipes/gorloder.html">Горлодер (морковный салат с сыром)</a></li>
+                            <li><a href="recipes/granola.html">Гранола</a></li>
+                            <li><a href="recipes/grenki.html">Гренки</a></li>
+                            <li><a href="recipes/guakamole.html">Гуакамоле</a></li>
+                            <li><a href="">- Долма</a></li>
+                            <li><a href="recipes/draniks_with_meat.html">Драники с мясом</a></li>
+                            <li><a href="recipes/egg_fried_rice.html">Жареный рис с яйцом (Egg Fried Rice)</a></li>
+                            <li><a href="recipes/joltiy_salat.html">Желтый салат</a></li>
+                            <li><a href="recipes/zapekanka.html">Запеканка</a></li>
+                            <li><a href="">- Запеченые овощи</a></li>
+                            <li><a href="recipes/squash_salad.html">Карамелизированный салат из пекана и тыквы</a></li>
+                            <li><a href="recipes/karri.html">Карри</a></li>
+                            <li><a href="recipes/halumi_karri.html">Карри с халлуми и помидорами</a></li>
+                            <li><a href="">- Картофельные котлеты с начинкой</a></li>
+                            <li><a href="recipes/kartofelnie_lepeshki.html">Картофельные лепешки</a></li>
+                            <li><a href="recipes/mediteranian_potato_salad.html">Картофельный салат средиземноморский</a></li>
+                            <li><a href="">- Картошка с грибами тушеная</a></li>
+                            <li><a href="">- Картошка с овощами и мясом в горшочках</a></li>
+                            <li><a href="recipes/kartoshka_garmoshka.html">Картошка-гармошка</a></li>
+                            <li><a href="recipes/turkey_kotlets.html">Котлеты из индейки</a></li>
+                            <li><a href="">- Красная капуста</a></li>
+                            <li><a href="recipes/bedrishki_v_klyare.html">Куриные бедрышки в кляре</a></li>
+                            <li><a href="">- Лаваш с начинкой - бртуч</a></li>
+                            <li><a href="recipes/lagman.html">Лагман</a></li>
+                            <li><a href="recipes/lasagna.html">Лазанья</a></li>
+                            <li><a href="recipes/sezonnyi_salat.html">Летний салат</a></li>
+                            <li><a href="recipes/creamy_salmon.html">Лосось в сливочном соусе с вялеными томатами и шпинатом</a></li>
+                            <li><a href="recipes/lukoviy_pirog.html">Луковый пирог</a></li>
+                            <li><a href="recipes/morkov_po_koreyski.html">Морковь по-корейски</a></li>
+                            <li><a href="recipes/gnocci.html">Ньокки с грибным трюфельным соусом</a></li>
+                        </ul>
+                        <ul class="recipe-column">
+                            <li><a href="">- Овсянка с начинкой (вяленые томаты+сыр / яблоки и корица)</a></li>
+                            <li><a href="recipes/odzhahuri.html">Оджахури с курицей</a></li>
+                            <li><a href="recipes/olivye.html">Оливье</a></li>
+                            <li><a href="recipes/orzo_chikpea.html">Орзо с помидорами и нутом</a></li>
+                            <li><a href="">- Паста на хлеб с баклажанами и черносливом</a></li>
+                            <li><a href="recipes/.html">- Паста с креветками и песто</a></li>
+                            <li><a href="">- Пацифик (гречневая каша с томатами и тушенкой)</a></li>
+                            <li><a href="recipes/pirozki_s_kartoshkoy2.html">Пирожки дрожжевые жареные с картошкой от Леси</a></li>
+                            <li><a href="recipes/pirozki_s_kartoshkoy.html">Пирожки жареные с картошкой</a></li>
+                            <li><a href="recipes/pizza.html">Пицца</a></li>
+                            <li><a href="recipes/plov.html">Плов класицкий</a></li>
+                            <li><a href="recipes/plov_s_crevetkami.html">Плов с креветками</a></li>
+                            <li><a href="recipes/pomidori_s_sirom.html">Помидоры с сыром и чесноком</a></li>
+                            <li><a href="recipes/pyre_Ramsay.html">Пюре от Рамзи с карамелизированным луком</a></li>
+                            <li><a href="recipes/ratatuy.html">Рататуй</a></li>
+                            <li><a href="recipes/rvanaya_svinina.html">Рваная свинина</a></li>
+                            <li><a href="recipes/ribnie_kotleti.html">Рыбные котлеты</a></li>
+                            <li><a href="recipes/saag_panir.html">Сааг Панир</a></li>
+                            <li><a href="recipes/beetroot_pumpkin_salad.html">Салат со свеклой, тыквой и фетой</a></li>
+                            <li><a href="">- Салат со скумбрией и рисом</a></li>
+                            <li><a href="">- Салат шуба</a></li>
+                            <li><a href="">- Салатище (киноа с овощами)</a></li>
+                            <li><a href="">- Соба</a></li>
+                            <li><a href="">- Спагетти с цукини</a></li>
+                            <li><a href="recipes/stovis.html">Стовис</a></li>
+                            <li><a href="recipes/sushi.html">Суши</a></li>
+                            <li><a href="recipes/sirniki.html">Сырники</a></li>
+                            <li><a href="recipes/meetballs.html">Тефтели по-икеевски</a></li>
+                            <li><a href="recipes/zelenij_vzriv.html">Универсальнй салат</a></li>
+                            <li><a href="recipes/falafel.html">Фалафель</a></li>
+                            <li><a href="recipes/halloumi_fritters.html">Халуми аладушки</a></li>
+                            <li><a href="recipes/chesnochnaya_pasta.html">Чесночная паста (Aglio e Olio)</a></li>
+                            <li><a href="recipes/chechevichnie_kotletki.html">Чечевичные котлетки</a></li>
+                            <li><a href="recipes/chilli_con_carne.html">Чили кон карне по-британски (Chilli con carne, British style)</a></li>
+                            <li><a href="recipes/schnitzel.html">Шницель и картофельный салат</a></li>
+                            <li><a href="recipes/yablochnie_blinchiki.html">Яблочные блинчики</a></li>
+                            <li><a href="recipes/yaichnaya_lapsha.html">Яичная лапша на курином бульоне</a></li>
+                            <li><a href="">- Яичница открытая/закрытая</a></li>
+                            <li><a href="">- Яичный салат</a></li>
+                            <li><a href="recipes/yakitori.html">Якитори</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-section">
+                <div class="recipes-panel" id="soups" data-section="soups">
+                    <h2 class="visually-hidden">Супы</h2>
+                    <div class="recipe-columns">
+                        <ul class="recipe-column">
+                            <li><a href="recipes/kartofelniy_s_poreem.html">Картофельный суп с луком-порей</a></li>
+                            <li><a href="recipes/kuriniy.html">Куриный суп</a></li>
+                            <li><a href="recipes/osenniy_sup.html">Осенний суп с диким рисом</a></li>
+                            <li><a href="recipes/borsch.html">Постный борщ</a></li>
+                            <li><a href="recipes/rassolnik.html">Рассольник</a></li>
+                            <li><a href="recipes/sup_kinoa.html">Суп из киноа и белой фасоли</a></li>
+                            <li><a href="recipes/sup_s_nutom.html">Суп с нутом</a></li>
+                        </ul>
+                        <ul class="recipe-column">
+                            <li><a href="recipes/sup_pure_zeleniy.html">Суп-пюре Зеленый</a></li>
+                            <li><a href="recipes/tomatno_tikvenniy_sup.html">Томатно-тыквенный суп</a></li>
+                            <li><a href="recipes/tikvenniy_sup.html">Тыквенный суп</a></li>
+                            <li><a href="recipes/finskiy_soup.html">Финская уха</a></li>
+                            <li><a href="recipes/chichevichniy_sup.html">Чичевичный суп с беконом</a></li>
+                            <li><a href="recipes/schaveeviy.html">Щавелевый суп</a></li>
+                            <li><a href="recipes/schi.html">Щи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-section">
+                <div class="recipes-panel" id="desserts" data-section="desserts">
+                    <h2 class="visually-hidden">Десерты</h2>
+                    <div class="recipe-columns">
+                        <ul class="recipe-column">
+                            <li><a href="recipes/a-la_zaher.html">А-ля Захер</a></li>
+                            <li><a href="recipes/peanut_butter_cookies.html">Арахисовое печенье</a></li>
+                            <li><a href="recipes/banana_bread.html">Банановый хлеб</a></li>
+                            <li><a href="recipes/bulochki_s_koricey.html">Булочки с корицей</a></li>
+                            <li><a href="recipes/venskie_vafli.html">Венские вафли</a></li>
+                            <li><a href="recipes/gata.html">Гата</a></li>
+                            <li><a href="recipes/grafskie_razvaliny.html">Графские развалины</a></li>
+                            <li><a href="recipes/risoviy_puding.html">Датский рисовый пудинг с вишневым сиропом</a></li>
+                            <li><a href="recipes/piterskiy_desert.html">Десерт с солёной карамелью, черносливом, муссом из маскарпоне и орехами пекан</a></li>
+                            <li><a href="recipes/zemlyanichniy_pirog.html">Земляничный пирог</a></li>
+                            <li><a href="recipes/imbirnoe_pechenye.html">Имбирное печенье</a></li>
+                            <li><a href="recipes/ginger_cookie.html">Имбирное печенье 2022</a></li>
+                            <li><a href="recipes/yorkshirskie_pudingi.html">Йоркширские пудинги</a></li>
+                            <li><a href="recipes/cupcake.html">Капкейки</a></li>
+                            <li><a href="recipes/keksi.html">Кексы</a></li>
+                            <li><a href="recipes/klubnichki.html">"Клубнички"</a></li>
+                            <li><a href="recipes/kokosovie_merengi.html">Кокосовые меренги</a></li>
+                            <li><a href="recipes/leniviy_pirog.html">Ленивый пирог</a></li>
+                            <li><a href="recipes/limonniy_tiramisu.html">Лимонный тирамису</a></li>
+                            <li><a href="recipes/medovik.html">- Медовик</a></li>
+                            <li><a href="recipes/merenga_tort.html">Меренговый торт</a></li>
+                            <li><a href="recipes/carrot_cake.html">Морковный пирог</a></li>
+                            <li><a href="recipes/tort_mussle.html">Муссле</a></li>
+                            <li><a href="recipes/napoleon.html">Наполеон</a></li>
+                            <li><a href="recipes/pechenie_yabloki.html">Печеные яблоки</a></li>
+                        </ul>
+                        <ul class="recipe-column">
+                            <li><a href="recipes/shok_pechenye.html">Печенье с кусочками шоколада</a></li>
+                            <li><a href="recipes/pirojnoe_kartoshka.html">Пирожное картошка</a></li>
+                            <li><a href="">- Птичье молоко</a></li>
+                            <li><a href="recipes/cheddar_bay_biscuits.html">Сырные печеньки Чеддер Бэй</a></li>
+                            <li><a href="recipes/tart_taten.html">Тарт Татен</a></li>
+                            <li><a href="recipes/tvoroznoe_pechene.html">Творожное печенье</a></li>
+                            <li><a href="recipes/tiramisu.html">Тирамису</a></li>
+                            <li><a href="recipes/tort_ kalloories.html">Торт Каллооорис</a></li>
+                            <li><a href="recipes/tort_ pavlova.html">Торт Павлова</a></li>
+                            <li><a href="recipes/sticky_toffee_pudding.html">Финиковый пуддинг (Sticky Toffee Pudding)</a></li>
+                            <li><a href="recipes/funduc_nutbutter.html">Фундучная ореховая паста</a></li>
+                            <li><a href="recipes/funduc_tort.html">Фундучный торт</a></li>
+                            <li><a href="recipes/hakerskie_pechenki.html">Хакерские печеньки</a></li>
+                            <li><a href="recipes/hvorost.html">Хворост</a></li>
+                            <li><a href="recipes/chizkeyk.html">Чизкейк</a></li>
+                            <li><a href="recipes/cheesecake_with_raspberries.html">Чизкейк с малиной</a></li>
+                            <li><a href="recipes/swedish_pancake_cake.html">Шведский блинный торт (Pannkakstårta)</a></li>
+                            <li><a href="recipes/shok_veg_tart.html">Шоколадно-веганский тарт</a></li>
+                            <li><a href="recipes/shokoladnoe_amer_pech.html">Шоколадное американское печенье</a></li>
+                            <li><a href="recipes/shok_muss.html">Шоколадный мусс</a></li>
+                            <li><a href="recipes/shok_korj.html">Шоколадный пирог</a></li>
+                            <li><a href="recipes/yuletik.html">Юлетик</a></li>
+                            <li><a href="recipes/apple_crisp.html">Яблочный крисп</a></li>
+                            <li><a href="recipes/yagodniye_keksy.html">Ягодные кексы с отрубями</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-section">
+                <div class="recipes-panel" id="sauces" data-section="sauces">
+                    <h2 class="visually-hidden">Соусы</h2>
+                    <div class="recipe-columns">
+                        <ul class="recipe-column">
+                            <li><a href="recipes/glazur.html">Глазурь</a></li>
+                            <li><a href="">- Заправка к салату</a></li>
+                            <li><a href="recipes/karamelniy_sous.html">Карамельный соус</a></li>
+                            <li><a href="">- Маринованные огурццы</a></li>
+                            <li><a href="recipes/pesto.html">Песто</a></li>
+                            <li><a href="recipes/sous_k_kartoshke.html">Сметанный к картошке</a></li>
+                            <li><a href="recipes/churasko.html">Чураско</a></li>
+                        </ul>
+                        <ul class="recipe-column" aria-hidden="true"></ul>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-section">
+                <div class="recipes-panel" id="drinks" data-section="drinks">
+                    <h2 class="visually-hidden">Напитки</h2>
+                    <div class="recipe-columns">
+                        <ul class="recipe-column">
+                            <li><a href="recipes/bezalkogolniy_punsh.html">Безалкогольный пунш</a></li>
+                            <li><a href="recipes/glintveyn.html">Глинтвейн</a></li>
+                            <li><a href="">- Имбирный чай</a></li>
+                            <li><a href="">- Какао</a></li>
+                            <li><a href="recipes/mors.html">Клюквенный морс</a></li>
+                            <li><a href="">- Коктейль - Вана Талин с яблочнным соком</a></li>
+                            <li><a href="">- Коктейль - Кола с бурбоном</a></li>
+                            <li><a href="recipes/limonad.html">Лимонад</a></li>
+                            <li><a href="">- Облепиховый чай</a></li>
+                            <li><a href="recipes/kefir_smuzi.html">Смузи с кефиром и ягодами</a></li>
+                            <li><a href="recipes/yablochniy_glintveyn.html">Яблочный глинтвейн (безалкогольный)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-back footer-decoration">Bon Appétit!</div>
+        <p>web-design / Julia<br>special thanks / Sofia</p>
+    </footer>
+
+    <script>
+        const sections = [...document.querySelectorAll('[data-section]')];
+        const headerLinks = [...document.querySelectorAll('[data-header-link]')];
+        const categoryNav = document.querySelector('.category-nav');
+        const categoryLinks = [...categoryNav.querySelectorAll('a')];
+        const mobileTabs = window.matchMedia('(max-width: 540px)');
+        let mobileActiveId = 'main-dishes';
+
+        const setCurrentSection = (id) => {
+            headerLinks.forEach((link) => {
+                const isCurrent = link.dataset.headerLink === id;
+                link.classList.toggle('is-current', isCurrent);
+                if (isCurrent) link.setAttribute('aria-current', 'true');
+                else link.removeAttribute('aria-current');
+            });
+
+            categoryLinks.forEach((link) => {
+                const isCurrent = link.hash === `#${id}`;
+                link.classList.toggle('is-active', isCurrent);
+                if (isCurrent) link.setAttribute('aria-current', 'true');
+                else link.removeAttribute('aria-current');
+            });
+        };
+
+        let ticking = false;
+
+        const showMobileSection = (id, updateUrl = false) => {
+            mobileActiveId = sections.some((section) => section.dataset.section === id)
+                ? id
+                : 'main-dishes';
+
+            sections.forEach((section) => {
+                section.classList.toggle('is-mobile-active', section.dataset.section === mobileActiveId);
+            });
+            setCurrentSection(mobileActiveId);
+
+            if (updateUrl) history.replaceState(null, '', `#${mobileActiveId}`);
+        };
+
+        const syncMobileLayout = () => {
+            document.body.classList.toggle('mobile-tabs-enabled', mobileTabs.matches);
+
+            if (mobileTabs.matches) {
+                const hashId = location.hash.slice(1);
+                showMobileSection(hashId || mobileActiveId);
+            } else {
+                sections.forEach((section) => section.classList.remove('is-mobile-active'));
+            }
+        };
+
+        categoryLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                if (!mobileTabs.matches) return;
+                event.preventDefault();
+                showMobileSection(link.hash.slice(1), true);
+            });
+        });
+
+        const updateCurrentSection = () => {
+            if (mobileTabs.matches) {
+                setCurrentSection(mobileActiveId);
+                ticking = false;
+                return;
+            }
+
+            let currentIndex = 0;
+            sections.slice(0, -1).forEach((section, index) => {
+                const itemBottoms = [...section.querySelectorAll('li')]
+                    .map((item) => item.getBoundingClientRect().bottom);
+                const sectionBottom = Math.max(...itemBottoms);
+                const triggerLine = categoryLinks[index].getBoundingClientRect().top + 1;
+                if (sectionBottom <= triggerLine) currentIndex = index + 1;
+            });
+
+            let current = sections[currentIndex];
+
+            const atPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+            if (atPageEnd) current = sections[sections.length - 1];
+
+            setCurrentSection(current.dataset.section);
+            ticking = false;
+        };
+
+        const requestUpdate = () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(updateCurrentSection);
+        };
+
+        window.addEventListener('scroll', requestUpdate, { passive: true });
+        window.addEventListener('resize', requestUpdate);
+        mobileTabs.addEventListener('change', syncMobileLayout);
+        document.fonts?.ready.then(requestUpdate);
+        syncMobileLayout();
+        updateCurrentSection();
+    </script>
+</body>
+</html>

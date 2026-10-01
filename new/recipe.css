@@ -65,9 +65,13 @@ a {
   transition: opacity 160ms ease;
 }
 
-.site-nav a:hover,
-.site-nav a:focus-visible {
-  opacity: 0.65;
+.nav-group > a {
+  color: #fff;
+}
+
+.nav-group > a:hover,
+.nav-group > a:focus-visible {
+  color: #9c9da5;
 }
 
 .site-mark {
@@ -82,12 +86,13 @@ a {
   height: 100%;
 }
 
+.language-switch,
 .language-switch strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.language-switch > span:last-child {
-  color: #c8c1a3;
+.language-switch > span {
+  color: #9c9da5;
 }
 
 .recipe-layout {
@@ -322,6 +327,11 @@ a {
 .footer-back:focus-visible {
   color: var(--frame);
   background: #fff;
+}
+
+.footer-decoration:hover {
+  color: #fff;
+  background: transparent;
 }
 
 .site-footer p {
