@@ -109,6 +109,7 @@ b {
 .recipe-photo {
   width: 400px;
   height: 400px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;    /* чтобы красиво кадрировалось */
   border-radius: 3px;
 }
@@ -149,7 +150,8 @@ b {
   .recipe-photo {
     width: 100%;
     max-width: 400px;
-    height: auto;       /* на мобиле пусть будет естественная высота */
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 }
 
