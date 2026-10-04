@@ -146,6 +146,12 @@ body.catalog-page {
   opacity: 0.58;
 }
 
+@media (min-width: 1181px) {
+  .recipe-column a.is-reviewed {
+    color: #f04f98;
+  }
+}
+
 .site-nav a.is-current {
   opacity: 1;
 }
