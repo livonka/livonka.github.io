@@ -254,6 +254,26 @@ a {
   font-weight: 600;
 }
 
+.ingredient-variant + .ingredient-variant {
+  margin-top: 24px;
+}
+
+.ingredient-variant-title {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.nutrition-message {
+  line-height: 1.5;
+}
+
+.method-variant-title {
+  letter-spacing: 0.02em;
+}
+
 .nutrition-smile {
   display: none;
 }
