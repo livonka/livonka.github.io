@@ -1,54 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
     <title>Запеканка</title>
 
-    <link href="../style.css" rel="stylesheet">
+    <link href="../recipe.css" rel="stylesheet">
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <div id="content">
-
-      <h2>Запеканка</h2>
-
-      <div class="top">
-        <img class="recipe-photo" src="../img/125.jpg" alt="zapekanka">
-
-        <div id="ingridients">
-          <ul>
-            <li>творог — 3 пачки</li>
-			<li>яйца — 5 шт</li>
-			<li>сметана — 270–300 г</li>
-			<li>сахар — 200 г</li>
-			<li>изюм — 120 г</li>
-			<li>манка — 80 г</li>
-			<li>разрыхлитель — 1,5 ч. л.</li>
-			<li>ваниль</li>
-          </ul>
+  <body class="recipe-page">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Разделы рецептов">
+        <div class="nav-group">
+          <a href="../index.html#main-dishes">основное</a>
+          <a href="../index.html#soups">супы</a>
+          <a href="../index.html#desserts">десерты</a>
         </div>
-      </div>
 
-      <div id="instructions">
-        <p> Сначала поставить разогреваться духовку до 170°C. </p>
-        <p> <b>120 г изюма</b> предварительно вымыть/замочить.</p>
-        <p> Сначала нужно подготовить творожную основу. В глубокой миске миксером размешать <b>3 пачки творога</b> с <b>5 яйцами</b> до однородной массы. Добавить в смесь <b>270–300 г сметаны</b>, немного соли, <b>200 г сахара</b> и <b>ваниль</b>. Снова хорошо размешать. Всыпать изюм, <b>1,5 ч.л. разрыхлителя</b> и <b>80 г манки</b>. Все аккуратно перемешать лопаткой до равномерного распределения ингредиентов. </p>
-        <p> Переложить массу в форму для запекания, заранее смазанную маслом или выстеленную бумагой для выпечки. Выпекать при температуре 170°C в течение 45 минут. Затем увеличить температуру до 190°C и готовить еще 10 минут. В завершение включить режим гриль и запекать 3 минуты до подрумянивания верха. </p>
-      </div>
+        <a class="site-mark" href="../index.html" aria-label="На главную">
+          <img src="../img/logo.svg" alt="">
+        </a>
 
-      <a id="back-link" href="../index.html">
-        <img src="../img/arrow0.png" alt="back">
-        Назад к списку рецептов
-      </a>
+        <div class="nav-group nav-group-right">
+          <a href="../index.html#sauces">соусы</a>
+          <a href="../index.html#drinks">напитки</a>
+          <span class="language-switch" aria-label="Язык сайта">
+            <strong>RU</strong><span aria-hidden="true"> / </span><span>EN</span>
+          </span>
+        </div>
+      </nav>
+    </header>
 
-    </div>
+    <main class="recipe-layout">
+      <section class="recipe-summary" aria-labelledby="recipe-title">
+        <div class="summary-inner">
+          <h1 id="recipe-title">Запеканка</h1>
+
+          <p class="recipe-intro">
+            Отличный белковый завтрак: можно приготовить сразу большую запеканку, нарезать её на порции и хранить в морозилке, чтобы быстро разогревать по утрам.
+          </p>
+
+          <div class="recipe-facts">
+            <section class="fact-block">
+              <h2 class="pill-heading">ингредиенты:</h2>
+              <ul class="ingredients-list">
+                <li><strong>творог</strong> — примерно 750 г</li>
+                <li><strong>яйца</strong> — 5 шт</li>
+                <li><strong>сметана</strong> — 270–300 г</li>
+                <li><strong>сахар</strong> — 100 г</li>
+                <li><strong>изюм</strong> — 120 г</li>
+                <li><strong>манка</strong> — 80 г</li>
+                <li><strong>разрыхлитель</strong> — 1,5 ч. л.</li>
+                <li><strong>ваниль</strong></li>
+              </ul>
+            </section>
+
+            <section class="fact-block nutrition-block" aria-label="Пищевая ценность на 100 грамм">
+              <h2 class="pill-heading">кбжу / 100 г <span class="nutrition-smile">(*¯︶¯*)</span></h2>
+              <dl class="nutrition-list">
+                <div><dt>≈ 225</dt><dd>ккал</dd></div>
+                <div><dt>≈ 13</dt><dd>белки</dd></div>
+                <div><dt>≈ 10</dt><dd>жиры</dd></div>
+                <div><dt>≈ 21 / 15 г</dt><dd>углеводы / сахар</dd></div>
+              </dl>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <article class="recipe-method">
+        <img class="hero-image" src="../img/125.jpg" alt="zapekanka">
+
+        <section class="method-content" aria-labelledby="method-title">
+          <h2 class="pill-heading method-heading" id="method-title">приготовление:</h2>
+
+          <ol class="method-list">
+            <li>
+              <p>Разогреть духовку до 170 °C.</p>
+            </li>
+            <li>
+              <p>Промыть <strong>120 г изюма</strong>, залить горячей водой на 10 минут, затем слить воду и обсушить.</p>
+            </li>
+            <li>
+              <p>В глубокой миске смешать миксером примерно <strong>750 г творога</strong> и <strong>5 яиц</strong> до однородности. Добавить <strong>270–300 г сметаны</strong>, щепотку <strong>соли</strong>, <strong>100 г сахара</strong> и <strong>ваниль</strong>, затем снова хорошо перемешать. Всыпать подготовленный изюм, <strong>1,5 ч. л. разрыхлителя</strong> и <strong>80 г манки</strong>. Аккуратно перемешать лопаткой, чтобы ингредиенты распределились равномерно.</p>
+            </li>
+            <li>
+              <p>Переложить массу в форму, заранее смазанную маслом или выстеленную бумагой для выпечки. Выпекать при 170 °C в течение 45 минут. Увеличить температуру до 190 °C и готовить ещё 10 минут. В завершение включить режим гриля и запекать около 3 минут, пока верх не подрумянится.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <img class="bon-appetit" src="../img/bon-appetit.svg" alt="Bon appétit!">
+
+    <footer class="site-footer">
+      <a class="footer-back" href="../index.html">← к списку рецептов</a>
+      <p>web-design / Julia<br>special thanks / Sofia</p>
+    </footer>
   </body>
 </html>

@@ -1,57 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
-    <title>Сааг Панир</title>
+    <title>Сааг панир алу</title>
 
-    <link href="../style.css" rel="stylesheet">
+    <link href="../recipe.css" rel="stylesheet">
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <div id="content">
-
-      <h2>Сааг Панир</h2>
-
-      <div class="top">
-        <img class="recipe-photo" src="../img/120.jpg" alt="saag_panir">
-
-        <div id="ingridients">
-          <ul>
-            <li>шпинат — 160 гр</li>
-            <li>панир — 226 гр</li>
-            <li>жирные сливки — 75 мл.</li>
-            <li>луковица — 125 гр</li>
-            <li>помидор — 75 гр</li>
-            <li>чеснок — 7-8 зубчиков</li>
-            <li>имбирь — 10 гр</li>
-            <li>зеленый чили</li>
-            <li>порошок чили, кориандр, гарам масала, cumin seeds, куркума</li>
-          </ul>
+  <body class="recipe-page">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Разделы рецептов">
+        <div class="nav-group">
+          <a href="../index.html#main-dishes">основное</a>
+          <a href="../index.html#soups">супы</a>
+          <a href="../index.html#desserts">десерты</a>
         </div>
-      </div>
 
-      <div id="instructions">
-        <p>Если будет подаваться с <b>картошкой</b> — поставить вариться картошку, если с <b>рисом</b> — рис.</p>
-        <p>Залить кипятком <b>160 гр. шпината</b> в отдельной миске на пару минут. Переложить в холодную, лучше ледяную воду, чтобы оставить его яркость.</p>
-        <p>Почистить и порезать не слишком мелко, так как пойдет в блендер, следующие ингредиенты: <b>луковица (125 гр)</b>, <b>помидор (75 гр)</b>, <b>чеснок</b> — 7-8 зубчиков, <b>имбирь</b> — 10 гр, <b>зеленый чили</b>. Разогреть сковороду с <b>маслом</b>, покрывающим все дно. Обжарить вышеперечисленные овощи, закрыв крышкой, минуты 2. Снять с огня, дать чуть остыть. Измельчить зажарку с 2 ст.л. воды и шпинатом до консистенции густой сметаны.</p>
-        <p>Поставить сковороду на средний огонь (6), налить масло, порезать <b>панир</b> на 15 кусочков, обжарить с двух сторон до румяных бочков. Снять панир со сковороды.</p>
-        <p>На эту же сковороду на огонь поменьше (4) поставить обжариваться пюрированную массу. Помешивать пару минут, добавить 2/3 <b>сливок</b> (50 мл), увеличить огонь до 6, всыпать специи по 1 ч.л.: <b>соль</b>, <b>порошок чили</b>, по 1/2 ч.л.: <b>кориандр</b>, <b>гарам масала</b>, <b>cumin seeds</b>, <b>куркума</b>. Перемешать, уменьшить огонь (4). Закрыть крышкой, потушить минут 6, пока масло не начнет отслаиваться по краям. Добавить туда же панир и потушить под крышкой все вместе еще пару минут, добавить пару кусочков <b>сливочного масла</b> и оставшиеся сливки (25 мл).</p>
-        <p>Подавать с картошкой или рисом.</p>
-      </div>
+        <a class="site-mark" href="../index.html" aria-label="На главную">
+          <img src="../img/logo.svg" alt="">
+        </a>
 
-      <a id="back-link" href="../index.html">
-        <img src="../img/arrow0.png" alt="back">
-        Назад к списку рецептов
-      </a>
+        <div class="nav-group nav-group-right">
+          <a href="../index.html#sauces">соусы</a>
+          <a href="../index.html#drinks">напитки</a>
+          <span class="language-switch" aria-label="Язык сайта">
+            <strong>RU</strong><span aria-hidden="true"> / </span><span>EN</span>
+          </span>
+        </div>
+      </nav>
+    </header>
 
-    </div>
+    <main class="recipe-layout">
+      <section class="recipe-summary recipe-summary--compact" aria-labelledby="recipe-title">
+        <div class="summary-inner">
+          <h1 id="recipe-title">Сааг панир алу</h1>
+
+          <div class="recipe-facts">
+            <section class="fact-block">
+              <h2 class="pill-heading">ингредиенты:</h2>
+              <ul class="ingredients-list">
+                <li><strong>baby-картофель</strong> — 500 г</li>
+                <li><strong>шпинат</strong> — 160 г</li>
+                <li><strong>панир</strong> — 226 г</li>
+                <li><strong>сливки 20%</strong> — 75 мл</li>
+                <li><strong>репчатый лук</strong> — 125 г</li>
+                <li><strong>помидор</strong> — 75 г</li>
+                <li><strong>чеснок</strong> — 7–8 зубчиков</li>
+                <li><strong>имбирь</strong> — 10 г</li>
+                <li><strong>зелёный чили</strong></li>
+                <li><strong>растительное масло, сливочное масло</strong></li>
+                <li><strong>соль, порошок чили, молотый кориандр, гарам масала, семена кумина, куркума</strong></li>
+              </ul>
+            </section>
+
+            <section class="fact-block nutrition-block" aria-label="Пищевая ценность на 100 грамм">
+              <h2 class="pill-heading">кбжу / 100 г <span class="nutrition-smile">(*¯︶¯*)</span></h2>
+              <dl class="nutrition-list">
+                <div><dt>≈ 155</dt><dd>ккал</dd></div>
+                <div><dt>≈ 5</dt><dd>белки</dd></div>
+                <div><dt>≈ 10</dt><dd>жиры</dd></div>
+                <div><dt>≈ 10 / 2,5 г</dt><dd>углеводы / сахар</dd></div>
+              </dl>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <article class="recipe-method">
+        <img class="hero-image" src="../img/120.jpg" alt="Сааг панир алу">
+
+        <section class="method-content" aria-labelledby="method-title">
+          <h2 class="pill-heading method-heading" id="method-title">приготовление:</h2>
+
+          <ol class="method-list">
+            <li>
+              <p>Вымыть <strong>500 г baby-картофеля</strong>, нарезать кусочками размером на один укус (bite-size) и отварить в подсоленной воде около 15 минут.</p>
+            </li>
+            <li>
+              <p>Залить <strong>160 г шпината</strong> кипятком на несколько минут. Затем переложить в холодную, лучше ледяную воду, чтобы сохранить яркий цвет.</p>
+            </li>
+            <li>
+              <p>Очистить и крупно нарезать <strong>125 г репчатого лука</strong>, <strong>75 г помидора</strong>, <strong>7–8 зубчиков чеснока</strong>, <strong>10 г имбиря</strong> и <strong>зелёный чили</strong> — овощи позже будут измельчаться. Разогреть сковороду с <strong>растительным маслом</strong>, выложить овощи и обжаривать под крышкой около 2 минут. Снять с огня и немного остудить. Измельчить зажарку со шпинатом и <strong>2 ст. л. воды</strong> в блендере до консистенции густой сметаны.</p>
+            </li>
+            <li>
+              <p>Разогреть сковороду с <strong>растительным маслом</strong> на среднем огне. Нарезать <strong>226 г панира</strong> примерно на 15 кусочков и обжарить с двух сторон до румяной корочки. Снять панир со сковороды.</p>
+            </li>
+            <li>
+              <p>Выложить на ту же сковороду шпинатную массу и готовить на слабом огне, помешивая, несколько минут. Добавить <strong>50 мл сливок 20%</strong> и увеличить огонь до среднего. Всыпать по <strong>1 ч. л. соли и порошка чили</strong>, а также по <strong>½ ч. л. молотого кориандра, гарам масалы, семян кумина и куркумы</strong>. Перемешать, уменьшить огонь, накрыть крышкой и тушить около 6 минут, пока масло не начнёт отделяться по краям. Вернуть панир на сковороду и готовить под крышкой ещё несколько минут. Добавить несколько кусочков <strong>сливочного масла</strong> и оставшиеся <strong>25 мл сливок 20%</strong>.</p>
+            </li>
+            <li>
+              <p>Добавить в сковороду отваренный baby-картофель и аккуратно всё перемешать, чтобы картошка и панир равномерно покрылись шпинатным соусом.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <img class="bon-appetit" src="../img/bon-appetit.svg" alt="Bon appétit!">
+
+    <footer class="site-footer">
+      <a class="footer-back" href="../index.html">← к списку рецептов</a>
+      <p>web-design / Julia<br>special thanks / Sofia</p>
+    </footer>
   </body>
 </html>

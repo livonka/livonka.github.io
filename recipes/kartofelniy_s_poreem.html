@@ -1,52 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
-    <title>Картофельный суп с луком-порей</title>
+    <title>Куриный суп с луком-пореем</title>
 
-    <link href="../style.css" rel="stylesheet">
+    <link href="../recipe.css" rel="stylesheet">
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <div id="content">
-
-      <h2>Картофельный суп с луком-порей</h2>
-
-      <div class="top">
-        <img class="recipe-photo" src="../img/68.jpg" alt="rassolnik">
-
-        <div id="ingridients">
-          <ul>
-            <li>TODO</li>
-          </ul>
+  <body class="recipe-page">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Разделы рецептов">
+        <div class="nav-group">
+          <a href="../index.html#main-dishes">основное</a>
+          <a href="../index.html#soups">супы</a>
+          <a href="../index.html#desserts">десерты</a>
         </div>
-      </div>
 
-      <div id="instructions">
-        <p>
-			Заранее сварить <b>2 л. бульона</b>. Почистить и крупно нарезать <b>2 морковки</b> и <b>1 луковицу</b>. Нарезать <b>2 стебля сельдерея</b>. Нарезать <b>400 гр. лука-порея</b>. Очистить и нарезать <b>2 зубчика чеснока</b>.
-			</p>
-        <p>
-			Поставить большую кастрюлю на сильный огонь и добавить <b>2 ст.л. оливкового масла</b>. Положить все нарезанные овощи и перемешать деревянной ложкой. Варить около 10 минут под не полностью закрытой крышкой, пока морковь не смягчится, а лук и лук-порей слегка станут золотистыми. Залить бульоном.
-			</p>
-        <p>
-			<b>400 гр. картофеля</b> очистить и порезать на кубики 1 см., добавить в суп. Хорошо перемешать суп и довести до кипения. Убавить огонь и варить еще 10 минут под крышкой. Снять кастрюлю с огня, приправить солью и перцем.
-			</p>
-      </div>
+        <a class="site-mark" href="../index.html" aria-label="На главную">
+          <img src="../img/logo.svg" alt="">
+        </a>
 
-      <a id="back-link" href="../index.html">
-        <img src="../img/arrow0.png" alt="back">
-        Назад к списку рецептов
-      </a>
+        <div class="nav-group nav-group-right">
+          <a href="../index.html#sauces">соусы</a>
+          <a href="../index.html#drinks">напитки</a>
+          <span class="language-switch" aria-label="Язык сайта">
+            <strong>RU</strong><span aria-hidden="true"> / </span><span>EN</span>
+          </span>
+        </div>
+      </nav>
+    </header>
 
-    </div>
+    <main class="recipe-layout">
+      <section class="recipe-summary recipe-summary--compact" aria-labelledby="recipe-title">
+        <div class="summary-inner">
+          <h1 id="recipe-title">Куриный суп с луком-пореем</h1>
+
+          <div class="recipe-facts">
+            <section class="fact-block">
+              <h2 class="pill-heading">ингредиенты:</h2>
+              <ul class="ingredients-list">
+                <li><strong>куриный бульон</strong> — 2 л</li>
+                <li><strong>картофель</strong> — 300 г</li>
+                <li><strong>лук-порей</strong> — 400 г</li>
+                <li><strong>стручковая фасоль</strong> — 1 упаковка (200 г)</li>
+                <li><strong>морковь</strong> — 2 шт.</li>
+                <li><strong>репчатый лук</strong> — 1 шт.</li>
+                <li><strong>стебли сельдерея</strong> — 2 шт.</li>
+                <li><strong>чеснок</strong> — 2 зубчика</li>
+                <li><strong>готовая курица из бульона</strong> — 200 г (по желанию)</li>
+                <li><strong>оливковое масло</strong> — 2 ст. л.</li>
+                <li><strong>соль, чёрный перец</strong></li>
+              </ul>
+            </section>
+
+            <section class="fact-block nutrition-block" aria-label="Пищевая ценность на 100 грамм">
+              <h2 class="pill-heading">кбжу / 100 г <span class="nutrition-smile">(*¯︶¯*)</span></h2>
+              <p class="nutrition-note">Без курицы / с 200 г курицы:</p>
+              <dl class="nutrition-list">
+                <div><dt>≈ 38–48</dt><dd>ккал</dd></div>
+                <div><dt>≈ 1,5–3,5</dt><dd>белки</dd></div>
+                <div><dt>≈ 1–2</dt><dd>жиры</dd></div>
+                <div><dt>≈ 5,5 / 2 г</dt><dd>углеводы / сахар</dd></div>
+              </dl>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <article class="recipe-method">
+        <img class="hero-image" src="../img/kartofelniy-sup-s-poreem.png" alt="Куриный суп с луком-пореем и стручковой фасолью">
+
+        <section class="method-content" aria-labelledby="method-title">
+          <h2 class="pill-heading method-heading" id="method-title">приготовление:</h2>
+
+          <ol class="method-list">
+            <li>
+              <p>Заранее сварить <strong>2 л куриного бульона</strong>. Если суп будет с курицей, оставить <strong>200 г готового мяса из бульона</strong> и разобрать его на небольшие кусочки.</p>
+            </li>
+            <li>
+              <p>Очистить и крупно нарезать <strong>2 моркови</strong> и <strong>1 луковицу</strong>. Нарезать <strong>2 стебля сельдерея</strong> и <strong>400 г лука-порея</strong>. Очистить и нарезать <strong>2 зубчика чеснока</strong>.</p>
+            </li>
+            <li>
+              <p>Разогреть в большой кастрюле <strong>2 ст. л. оливкового масла</strong>. Добавить нарезанные овощи, перемешать и готовить около 10 минут под неплотно закрытой крышкой, пока морковь не станет мягче, а репчатый лук и лук-порей слегка не подрумянятся.</p>
+            </li>
+            <li>
+              <p>Влить <strong>2 л куриного бульона</strong>. Очистить <strong>300 г картофеля</strong>, нарезать кубиками размером около 1 см и добавить в суп. Перемешать, довести до кипения, убавить огонь и варить под крышкой около 10 минут.</p>
+            </li>
+            <li>
+              <p>Вымыть <strong>200 г стручковой фасоли</strong>, удалить кончики и разрезать стручки на кусочки размером на один укус (bite-size). Добавить фасоль в суп за 5 минут до конца приготовления. Одновременно по желанию добавить <strong>200 г готовой курицы из бульона</strong>.</p>
+            </li>
+            <li>
+              <p>Проверить готовность картофеля и фасоли. Снять кастрюлю с огня, добавить <strong>соль</strong> и <strong>чёрный перец</strong> по вкусу.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <img class="bon-appetit" src="../img/bon-appetit.svg" alt="Bon appétit!">
+
+    <footer class="site-footer">
+      <a class="footer-back" href="../index.html">← к списку рецептов</a>
+      <p>web-design / Julia<br>special thanks / Sofia</p>
+    </footer>
   </body>
 </html>
